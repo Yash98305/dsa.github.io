@@ -11,11 +11,11 @@
 
     #home div:nth-child(2) {
         margin-top: 0px;
-        height: 0px;
+        height: 130px;
     }
 
     #home {
-        height: 130vh;
+        height: 110vh;
         display: grid;
         padding: 50px;
         grid-template-columns: 1fr;
@@ -104,12 +104,13 @@
         border-bottom: 6px solid white;
         right: 5px;
     }
-
+#myimg {
+    display:inline;
+    padding: 0px auto;
+}
     #myimg img {
         display: inline;
         height: 400px;
-        transform: translate(3px, -106px);
-        border-radius: 30em 4em/20em 3em;
     }
 
     #about {
