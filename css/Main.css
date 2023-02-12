@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+*{
+    margin: 0;padding: 0;
+    color: var(--theme-color);
+}
+
+:root{
+    --skin:red;
+    --theme:rgb(63, 56, 56);
+    --theme-l:rgb(56, 55, 55);
+    --theme-l-color:rgb(95, 95, 95);
+    --theme-color:white;
+    --logo-font:'Monoton', cursive;
+}
+body,html{
+    overflow-x: hidden;
+}
+
+.but img{
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 50px;
+    filter: invert(100%);
+    cursor: pointer;
+    z-index: 55;
+    
+}
+body{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(50, 69, 176, 1) 45%, rgba(0, 212, 255, 110) 100%);
+
+}
+#fixnav{
+    position: fixed;
+    height: 100vh;
+    min-width: 350px;
+    z-index: 50;
+    display: flex;
+    background-color:var(--theme-l);
+}
+#fixnav a{
+    font-size: 2.5vmin;
+    font-family: 'Poppins', sans-serif;
+    color: var(--theme-color);
+    text-decoration:none;  
+    word-spacing: 10px;
+    
+}
+#fixnav ul{
+    margin-top: 250px;
+}
+#fixnav li{
+    margin: 60px;
+    text-align: center;
+    border-bottom-style: solid;
+    border-color: var(--theme-l-color);
+    border-width: 2px;
+    
+}
+
+span{
+    cursor: pointer;
+}
+
+
+li img{
+    height: 3.5vmin;
+    margin-right:12px ;
+    filter: invert(100%);
+    
+} 
+#fixnav{
+    display: none;
+}
+/* #home{
+    height: 100vh;
+    justify-content: right;
+    align-items: center;
+} */
+.item1 { grid-area: header;border: 2px solid red; }
+.item2 { grid-area: menu;border: 2px solid red; }
+.item3 { grid-area: main; border: 2px solid red;}
+.item4 { grid-area: right; border: 2px solid red;}
+.item5 { grid-area: footer; border: 2px solid red;}
+
+#home{
+    
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu   menu   main   main   right  right'
+    'menu menu footer footer footer footer';
+  gap: 10px;
+  background-color: blue;
+}
+#home img{  
+    height: 350px;
+}
+/* #home-img::before{
+    content: "";
+    position: absolute;
+    height: 100px;width: 100px;
+    border-bottom:10px solid var(--skin)  ;
+    border-right:10px solid var(--skin)  ;
+    right: 120px;
+    bottom: 50px;
+    z-index: 4;
+}
+#home-img::after{
+    content: "";
+    position: absolute;
+    height: 100px;width: 100px;
+    border-top:10px solid var(--skin)  ;
+    border-left:10px solid var(--skin)  ;
+    right: 440px;
+    top: 120px;
+    z-index: 4;
+} */
+.logo{
+    z-index: 1;
+    top: 45vh;
+    rotate: 270deg;
+    font-size: 60px;
+    color: var(--theme-color);
+    font-family: var(--logo-font);
+}
+
+.logo-img::before{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    transform: translate(170px,-40px);
+    height: 50px;width: 50px;
+    border-bottom:10px solid var(--skin)  ;
+    border-right:10px solid var(--skin)  ;
+}
+.logo-img::after{
+    content: "";
+    position: absolute;
+    transform: translate(-30px,-110px);
+    height: 50px;width: 50px;
+    border-top:10px solid var(--skin)  ;
+    border-left:10px solid var(--skin)  ;
+    z-index: 1;
+
+}
+
+#con1{
+    position: absolute;
+    height: 60vh;
+    width: 50%;
+    top: 20vh;
+    left: 15vw;
+    z-index: 888;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    z-index: 2;
+}
+#con1 h1 {
+    margin: 40px;
+    font-size: 40px;
+    color: var(--theme-color);
+}
+#con1 p {
+    margin: 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: var(--theme-color);
+}
+#con1 h1 span {
+    color: var(--skin);
+}
+#con1 h1:nth-child(1) span{
+    font-family: var(--logo-font);
+}
+
+
+#dsa{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#dsa div{
+    border: 2px solid rgb(255, 255, 255);
+    margin: 45px;
+    height: 40%;
+    width: 40%;
+    color: var(--theme-color);
+    
+}
+#dsa h1{
+text-align: center;
+border-bottom:solid ;
+}
+#dsa ul{
+    margin: 50px;
+    font-size: 3.5vmin;
+}
+#dsa a{
+    text-decoration: none;
+    color: var(--theme-color);
+}
+#dsa a:hover{
+    color: var(--skin);
+    font-size: 3.8vmin;
+}
+.setting {
+    cursor: pointer;
+    /* background-image: url(/gear-fill.svg); */
+    filter: invert(100%);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    margin: 30px;
+    position: fixed;
+    animation: aa 5s linear infinite;;
+}
+.setting img{
+    height: 45px;
+}
+@keyframes aa {
+    0% {
+        
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.yl{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+.yllogo{
+    margin-top: 40px;
+    z-index: 54;
+    position: absolute;
+    top: 5vh;
+
+    font-size: 4vmin;
+    color: var(--theme-color);
+    font-family: var(--logo-font);
+}
+
+.yllogo-img::before{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    transform: translate(90px,-38px);
+    height: 40px;width: 40px;
+    border-bottom:7px solid var(--skin)  ;
+    border-right:7px solid var(--skin)  ;
+}
+.yllogo-img::after{
+    content: "";
+    position: absolute;
+    transform: translate(-25px,-70px);
+    height: 40px;width: 40px;
+    border-top:7px solid var(--skin)  ;
+    border-left:7px solid var(--skin)  ;
+    z-index: 1;
+
+}
+#theme{
+    
+    height: 20%;width: 20%;
+    border-radius: 17px;
+    top: 60px;
+    right: 60px;
+    z-index: 555;
+    position: fixed;
+    display: flex;
+   box-shadow: 3px 3px 10px rgb(0, 0, 0);
+    background: linear-gradient(rgb(36, 35, 35),rgb(61, 61, 61));
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+#theme div{
+    margin: 1.5%;
+    margin-top: 13%;
+    height: 40%;
+    width: 20%;
+    border-radius: 50%;
+   display: inline-block;
+
+}
+#theme{
+    display: none;
+}
+#theme div{
+    cursor: pointer;
+}
+#theme .color-1{
+background-color: var(--skin);
+}
+#theme .color-2{
+background-color: yellow
+}
+#theme .color-1{
+background-color: var(--skin);
+}
+#theme .color-1{
+background-color: var(--skin);
+}

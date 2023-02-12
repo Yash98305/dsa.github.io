@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin: 0;padding: 0;
+
+}
+#large-header{
+    position:absolute;
+    z-index: -1;
+}
+#bod>p{
+    margin-bottom: 30px;
+    
+}
+.heading{
+    margin: 30px;
+    margin-left: 0px;
+    font-size: 4vmin;
+}
+.cons{ 
+    display: grid; 
+    /* flex-wrap: wrap; */
+    /* justify-content: right; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 112px 112px 112px;  */
+    /* grid-template-columns: repeat(auto-fit, minmax(280px,2fr)); */
+    /* justify-content: center;  */
+}
+.temp{
+    height: 15em;width: 15em;
+    background-color: rgb(214, 255, 218);
+    margin: auto;
+    border-radius: 12px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items:flex-end; */
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #000;
+box-sizing: border-box;
+}
+.temp h1{
+    width: 100px;
+    border-radius:15px ;
+    background-color: var(--skin); 
+    box-shadow: 0px 0px 15px #000;
+    margin: 0px auto auto;
+    margin-bottom: 0px;
+    font-size: 1em;
+    padding:8px ;
+    text-align: center;
+    transform: scale(0);
+   margin-top: 180px;
+}
+#bod{
+    margin-left: 142px;
+}
+
+.temp p{font-family: 'Itim', cursive;
+    margin-top: 30px;
+   text-align: center;
+    color: #000;
+    font-size: 2em;
+    position: absolute;
+    width: 235px;
+}
+.temp:hover h1{
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+button{
+    cursor: pointer;
+}
+.pgstyle img{
+    background-size: cover;
+    width: 70%;
+    margin:20px auto ;
+    border-radius: 12px;
+    box-shadow:0px 0px 20px #000;
+}
+.close::after{
+    content: "";
+    position: fixed;
+    height: 50px;width: 50px;
+    border-bottom:8px solid white ;
+    transform: rotate(-45deg);
+    right: 52px;
+    z-index: 4; 
+    
+}
+.close{
+    cursor: pointer;
+}
+.close::before{
+    content: "";
+    position: fixed;
+    height: 50px;width: 50px;
+    border-bottom:8px solid white ;
+    transform: rotate(45deg);
+    right: 16px;
+    z-index: 4;
+}
+
+
+
+.pgstyle{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(58, 58, 58, 0.555);
+    backdrop-filter: blur(25px);
+display: flex;
+justify-content: center;
+    z-index:100000;
+display: none;
+}
+
+
+
+ 
