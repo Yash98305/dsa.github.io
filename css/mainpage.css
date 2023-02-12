@@ -560,23 +560,8 @@ footer .by p {
 #dsa li {
   background: none;
 }
-
-#myimg {
-  margin: auto auto;
-  border: 0.7em solid rgba(0, 255, 89, 0.623);
-  background-color: rgb(253, 246, 246);
-  height: 45vh;
-  width: 45vh;
-  border-radius: 30em 5em/20em 3em;
-  box-shadow: 2px 8px 17px 9px black;
-  transition: all 1s ease-out;
-}
-
 #myimg img {
-  display: inline;
-  height: 400px;
-  transform: translate(12px, -88px);
-  border-radius: 30em 4em/20em 3em;
+  margin-top:15vh;
 }
 
 #about {
