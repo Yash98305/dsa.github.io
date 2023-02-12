@@ -15,7 +15,7 @@
     }
 
     #home {
-        height: 95vh;
+        height: 75vh;
         display: grid;
         padding: 50px;
         grid-template-columns: 1fr;
@@ -110,12 +110,12 @@
 }
     #myimg img {
         display: inline;
-        height: 500px;
+        height: 600px;
     }
 
     #about {
         padding: 0px 50px;
-        height: 270vh;
+        height: 190vh;
     }
 
     h5 {
